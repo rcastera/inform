@@ -1,0 +1,23 @@
+{
+  "name": "inform",
+  "description": "A small, easy-to-use notification message to inform users about specific actions.",
+  "keywords": ["inform", "message", "notification", "toast", "popup", "alert"],
+  "authors": [
+    "Richard Castera <no@spam.org>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rcastera/inform.git"
+  },
+  "version": "1.0.0",
+  "main": [
+    "dist/inform.min.css",
+    "dist/inform.min.js"
+  ],
+  "ignore": [
+    "index.html",
+  ],
+  "dependencies": {
+    "jquery": "latest"
+  }
+}
