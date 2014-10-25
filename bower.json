@@ -15,7 +15,7 @@
     "dist/inform.min.js"
   ],
   "ignore": [
-    "index.html",
+    "index.html"
   ],
   "dependencies": {
     "jquery": "latest"
