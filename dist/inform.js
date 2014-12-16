@@ -40,13 +40,12 @@
                     'padding': '10px',
                     'z-index': 99999,
                     'width': this.config.width,
-                    'height': '25px',
                     'position': 'fixed',
                     'top': '0px',
                     'text-align': 'center'
                 };
                 this.widget = $('<div/>')
-                                .attr('id', '#inform-actions')
+                                .attr('id', 'inform-actions')
                                 .css(css)
                                 .removeClass()
                                 .addClass(this.config.cssClass)
@@ -60,13 +59,6 @@
                 }
 
                 $('body').prepend(this.widget);
-                $(window).resize(function() {
-                    that.widget.css({
-                        'left': (($(document).width() - that.widget.width()) / 2) + 'px'
-                    });
-                });
-                $(window).trigger('resize');
-
                 this.widget.click(function(event) {
                     that.hide();
                 });
@@ -82,7 +74,6 @@
                 } else {
                     this.widget.slideDown();
                 }
-                $(window).trigger('resize');
             }
 
             // If configured to hide at specified interval, do so.
